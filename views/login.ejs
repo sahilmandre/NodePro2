@@ -1,0 +1,19 @@
+<%- include("../partials/header.ejs") %>  
+
+<form action="/login" method="post">
+    <!-- user input-->
+    Username:<br>
+    <input type="text" name="username" placeholder="Username" required><br><br>
+    <!-- submit button -->
+    <input type="submit" value="login">
+</form>
+
+<form action="/" method="GET">
+    <input type="submit" value="home">
+</form>
+
+<form action="/users" method="GET">
+    <input type="submit" value="USers">
+</form>
+
+<%- include("../partials/footer.ejs") %>
